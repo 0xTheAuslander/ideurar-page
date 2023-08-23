@@ -8,26 +8,34 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    line-height: 1.5;
-    
 }
-.header{
-    height: 440px;
+nav {
+    padding: 16px 30px;
 }
 nav, header, footer {
     color: #fff;
     background-color: #1f2937;
 }
 
+.navbar a:hover {
+    color: lightblue;
+}
+
+.header{
+    height: auto;
+    padding: 96px 30px;
+}
+
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 16px;
+    gap: 20px;
     max-width: 1200px;
+    height: auto;
     margin: 0 auto;
-    padding: 30px 30px;
 }
 
 .navbar .container, 
@@ -38,8 +46,20 @@ nav, header, footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
+}
+
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .section-content .container .boxes {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 .navbar .container ul {
@@ -52,15 +72,14 @@ nav, header, footer {
 }
 
 .navbar a, .header .container p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
     color: #e5e7eb;
     font-size: 18px;
+    line-height: 1.5;
 }
 
 .header-text {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
     max-width: 550px;
 }
 
@@ -76,12 +95,10 @@ nav, header, footer {
     color: #1f2937;
 }
 
-img {
-    max-width: 100%;
-}
 .header img {
-    display: inline-block;
-    background-color: #cac7c7;
+    height: 300px;
+    border-radius: 10px;
+    max-width: auto;
 }
 .illustrations {
     padding: 80px;
@@ -115,11 +132,19 @@ h1, h2 {
 .section-content .container.quote p {
     font-size: 36px;
     font-weight: lighter;
+    font-style: italic;
 }
-.section-content .container.quote span {
-    display: block;
+
+.section-content .container.quote .author {
     font-weight: bold;
+    font-size: 30px;
     margin-left: auto;
+    margin-right: 40px;
+}
+
+.section-content .container.quote {
+    max-width: 1000px;
+    padding: 26px;
 }
 
 
@@ -128,6 +153,7 @@ h1, h2 {
     background-color: #3882f6;
     border-radius: 10px;
     color: #f9faf8;
+    padding: 60px 70px;
 }
 
 .sign-up-btn {
@@ -137,6 +163,10 @@ h1, h2 {
     padding: 4px 8px;
     border: 1px solid #fff;
     border-radius: 10px;
+    margin: 20px auto;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 
@@ -146,4 +176,7 @@ h1, h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 30px 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
 }
