@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    
+}
+.header{
+    height: 440px;
+}
+nav, header, footer {
+    color: #fff;
+    background-color: #1f2937;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 30px;
+}
+
+.navbar .container, 
+.header .container,
+.section-content .container.call-to-action,
+.section-content .container .boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.navbar .container ul {
+    display: flex;
+}
+.navbar .container .logo {
+    font-weight: bold;
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+.navbar a, .header .container p{
+    text-decoration: none;
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 550px;
+}
+
+.header .container h1 {
+    font-size: 48px;
+    font-weight: 1000;
+    color: #f9faf8;
+}
+
+.section-content .container h2 {
+    font-size: 36px;
+    font-weight: 1000;
+    color: #1f2937;
+}
+
+img {
+    max-width: 100%;
+}
+.header img {
+    display: inline-block;
+    background-color: #cac7c7;
+}
+.illustrations {
+    padding: 80px;
+}
+.illustration p {
+    width: 200px;
+}
+.illustration img {
+    display: inline-block;
+    border: 3px solid blue;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+
+h1, h2 {
+    margin-bottom: 15px;
+}
+
+.section-content.quote-section {
+    background-color: #e5e7eb;
+    color: #1f2937;
+    padding: 70px;
+}
+.section-content .container.quote p {
+    font-size: 36px;
+    font-weight: lighter;
+}
+.section-content .container.quote span {
+    display: block;
+    font-weight: bold;
+    margin-left: auto;
+}
+
+
+.section-content .container.call-to-action {
+    margin: 86px auto;
+    background-color: #3882f6;
+    border-radius: 10px;
+    color: #f9faf8;
+}
+
+.sign-up-btn {
+    color: #f9faf8;
+    width: 100px;
+    background-color: #3882f6;
+    padding: 4px 8px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+
+
+/* Center the footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
