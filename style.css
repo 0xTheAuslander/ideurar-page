@@ -19,6 +19,7 @@ nav, header, footer {
 
 .navbar a:hover {
     color: lightblue;
+    cursor: pointer;
 }
 
 .header{
@@ -97,8 +98,10 @@ nav, header, footer {
 
 .header img {
     height: 300px;
-    border-radius: 10px;
-    max-width: auto;
+    border-radius: 12px;
+    width: auto;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0,7);
 }
 .illustrations {
     padding: 80px;
@@ -108,10 +111,12 @@ nav, header, footer {
 }
 .illustration img {
     display: inline-block;
-    border: 3px solid blue;
+    border: 1px solid navy;
     height: 200px;
     width: 200px;
     border-radius: 10px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0,0.5);
+    cursor: pointer;
 }
 
 ul li {
@@ -169,6 +174,10 @@ h1, h2 {
     font-size: 15px;
 }
 
+.sign-up-btn:hover {
+    background-color: navy;
+    cursor: pointer;
+}
 
 
 /* Center the footer */
@@ -180,3 +189,20 @@ h1, h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
 }
+
+/* [1] The container */
+.img-hover-zoom {
+    height: 300px; /* [1.1] Set it as per your need */
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  }
+  
+  /* [2] Transition property for smooth transformation of images */
+  .img-hover-zoom img {
+    transition: transform .5s ease;
+  }
+  
+  /* [3] Finally, transforming the image when container gets hovered */
+  .img-hover-zoom:hover img {
+    transform: scale(1.5);
+  }
+
